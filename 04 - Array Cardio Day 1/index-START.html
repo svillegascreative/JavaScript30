@@ -75,11 +75,20 @@
     const peopleBySurname = people.sort(
       (a, b) => a > b ? 1: -1
     );
-    console.log(peopleBySurname);
+    // console.log(peopleBySurname);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+    const transportation = data.reduce( (object, type) => {
+      if (!object[type]) {
+        object[type] = 0;
+      }
+      object[type]++;
+      return object;
+    }, {} );
+    console.log(transportation);
 
   </script>
 </body>
