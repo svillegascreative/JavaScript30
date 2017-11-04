@@ -2,6 +2,41 @@
 
 # JavaScript30
 
-My take on Wes Bos' JavaScript30 exercises
+This is my take on Wes Bos' JavaScript30 exercises. I felt that I should get some practice building common and fun things with JavaScript without relying on libraries.
 
-Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
+Details and sign up: [https://JavaScript30.com](https://JavaScript30.com)
+
+Source files: [https://github.com/wesbos/JavaScript30](https://github.com/wesbos/JavaScript30)
+
+
+## Exercises
+- [x] 1 - [JavaScript Drum kit](https://github.com/svillegascreative/JavaScript30/tree/master/01%20-%20JavaScript%20Drum%20Kit)
+- [x] 2 - [JS and CSS Clock](https://github.com/svillegascreative/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock)
+- [x] 3 - [CSS Variables](https://github.com/svillegascreative/JavaScript30/tree/master/03%20-%20CSS%20Variables)
+- [x] 4 - [Array Cardio Day 1](https://github.com/svillegascreative/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201)
+- [ ] 5 - Flex Panel Gallery
+- [ ] 6 - Type Ahead
+- [ ] 7 - Array Cardio Day 2
+- [ ] 8 - Fun With HTML5 Canvas
+- [ ] 9 - Dev Tools Domination
+- [ ] 10 - Hold Shift and Check Checkboxes
+- [ ] 11 - Custom Video Player
+- [ ] 12 - Key Sequence Detection
+- [ ] 13 - Slide in on Scroll
+- [ ] 14 - JavaScript References vs. Copying
+- [ ] 15 - LocalStorage
+- [ ] 16 - MouseMove Shadow
+- [ ] 17 - Sort Without Articles
+- [ ] 18 - Adding up Times with Reduce
+- [ ] 19 - Webcam fun
+- [ ] 20 - Speech Detection
+- [ ] 21 - Geolocation
+- [ ] 22 - Follow Along Link Highlighter
+- [ ] 23 - Speech Synthesis
+- [ ] 24 - Sticky Nav
+- [ ] 25 - Event Capture, Propagation, Bubbling, and Once
+- [ ] 26 - Stripe Follow Along Nav
+- [ ] 27 - Click and Drag
+- [ ] 28 - Video Speed Controller
+- [ ] 29 - Countdown Timer
+- [ ] 30 - Whack-A-Mole
