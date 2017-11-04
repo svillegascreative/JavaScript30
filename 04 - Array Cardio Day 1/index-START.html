@@ -65,13 +65,17 @@
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-    const links = Array.from(document.querySelectorAll('.mw-category-group a'));
-    const names = links.map( link => link.textContent );
-    const deNames = names.filter( name => name.includes('de'));
-    console.log(deNames);
+    // const links = Array.from(document.querySelectorAll('.mw-category-group a'));
+    // const names = links.map( link => link.textContent );
+    // const deNames = names.filter( name => name.includes('de'));
+    // console.log(deNames);
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const peopleBySurname = people.sort(
+      (a, b) => a > b ? 1: -1
+    );
+    console.log(peopleBySurname);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
