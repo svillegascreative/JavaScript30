@@ -14,7 +14,8 @@ function findMatches(wordToMatch, array) {
 }
 
 function displayMatches() {
-  
+  const matches = findMatches(this.value, cities);
+  console.log(matches);
 }
 
 searchInput.addEventListener('change', displayMatches);
