@@ -4,8 +4,10 @@ function viewPanel() {
   this.classList.add('open');
 }
 
-function animateText() {
-  this.classList.toggle('open-active');
+function animateText(e) {
+  if (e.propertyName.includes('flex')) {
+    this.classList.toggle('open-active');
+  }
 }
 
 panels.forEach( panel => {
