@@ -14,7 +14,7 @@ Source files: [https://github.com/wesbos/JavaScript30](https://github.com/wesbos
 - [x] 2 - [JS and CSS Clock](https://github.com/svillegascreative/JavaScript30/tree/master/02%20-%20JS%20and%20CSS%20Clock)
 - [x] 3 - [CSS Variables](https://github.com/svillegascreative/JavaScript30/tree/master/03%20-%20CSS%20Variables)
 - [x] 4 - [Array Cardio Day 1](https://github.com/svillegascreative/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201)
-- [ ] 5 - Flex Panel Gallery
+- [x] 5 - [Flex Panel Gallery](https://github.com/svillegascreative/JavaScript30/tree/master/05%20-%20Flex%20Panel%20Gallery)
 - [ ] 6 - Type Ahead
 - [ ] 7 - Array Cardio Day 2
 - [ ] 8 - Fun With HTML5 Canvas
