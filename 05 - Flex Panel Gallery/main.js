@@ -1,6 +1,7 @@
 const panels = document.querySelectorAll('.panel');
 
 function viewPanel() {
+  panels.forEach( panel => panel.classList.remove('open'));
   this.classList.add('open');
 }
 
