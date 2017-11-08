@@ -13,17 +13,13 @@
     { text: 'Nice Nice Nice!', id: 542328 }
   ];
 
+  const currentYear = (new Date()).getFullYear();
+
   // Some and Every Checks
   // Array.prototype.some() // is at least one person 19 or older?
-  const isOneAdult = people.some( person => {
-    const currentYear = (new Date()).getFullYear();
-    return currentYear - person.year >= 19
-  });
+  const isOneAdult = people.some( person => currentYear - person.year >= 19);
   // Array.prototype.every() // is everyone 19 or older?
-  const areAllAdults = people.every( person => {
-    const currentYear = (new Date()).getFullYear();
-    return currentYear - person.year >= 19
-  });
+  const areAllAdults = people.every( person => currentYear - person.year >= 19);
 
   // Array.prototype.find()
   // Find is like filter, but instead returns just the one you are looking for
