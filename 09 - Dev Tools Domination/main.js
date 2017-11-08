@@ -44,5 +44,19 @@ dogs.forEach( dog => {
 });
 
 // counting
+console.count('Kona');
+console.count('Liberty');
+console.count('Kona');
+console.count('Liberty');
+console.count('Kona');
+console.count('Liberty');
+console.count('Liberty');
+console.count('Kona');
+console.count('Liberty');
+console.count('Liberty');
+console.count('Kona');
+console.count('Kona');
+console.count('Liberty');
+console.count('Kona');
 
 // timing
