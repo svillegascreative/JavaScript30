@@ -16,7 +16,7 @@ Source files: [https://github.com/wesbos/JavaScript30](https://github.com/wesbos
 - [x] 4 - [Array Cardio Day 1](https://github.com/svillegascreative/JavaScript30/tree/master/04%20-%20Array%20Cardio%20Day%201)
 - [x] 5 - [Flex Panel Gallery](https://github.com/svillegascreative/JavaScript30/tree/master/05%20-%20Flex%20Panel%20Gallery)
 - [x] 6 - [Type Ahead](https://github.com/svillegascreative/JavaScript30/tree/master/06%20-%20Type%20Ahead)
-- [ ] 7 - Array Cardio Day 2
+- [x] 7 - [Array Cardio Day 2](https://github.com/svillegascreative/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202)
 - [ ] 8 - Fun With HTML5 Canvas
 - [ ] 9 - Dev Tools Domination
 - [ ] 10 - Hold Shift and Check Checkboxes
