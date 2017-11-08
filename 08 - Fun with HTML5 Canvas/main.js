@@ -6,11 +6,13 @@ const ctx = canvas.getContext('2d');
 // ctx.strokeStyle = 'papayawhip';
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
+ctx.lineWidth = 50;
 
 let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
 let hue = 0;
+let isGrowing = true;
 
 function draw(e) {
   if (!isDrawing) return;
@@ -25,6 +27,14 @@ function draw(e) {
   hue++;
   if (hue >= 360) {
     hue = 0;
+  }
+  if (ctx.lineWidth > 100 || ctx.lineWidth <= 1) {
+    isGrowing = !isGrowing;
+  }
+  if (isGrowing) {
+    ctx.lineWidth++;
+  } else {
+    ctx.lineWidth--;
   }
 }
 
