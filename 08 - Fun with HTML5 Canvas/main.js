@@ -9,6 +9,11 @@ ctx.lineCap = 'round';
 
 let isDrawing = false;
 
+function draw(e) {
+  if (!isDrawing) return;
+}
+
 canvas.addEventListener('mousedown', () => isDrawing = true);
 canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mousedown', () => isDrawing = false);
+canvas.addEventListener('mousemove', draw);
