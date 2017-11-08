@@ -17,9 +17,13 @@ function draw(e) {
   ctx.moveTo(lastX, lastY);
   ctx.lineTo(e.offsetX, e.offsetY);
   ctx.stroke();
+  [lastX, lastY] = [e.offsetX, e.offsetY];
 }
 
-canvas.addEventListener('mousedown', () => isDrawing = true);
+canvas.addEventListener('mousedown', (e) => {
+  isDrawing = true;
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+});
 canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mousedown', () => isDrawing = false);
 canvas.addEventListener('mousemove', draw);
