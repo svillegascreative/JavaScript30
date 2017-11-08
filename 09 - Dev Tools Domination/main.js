@@ -1,5 +1,6 @@
 const p = document.querySelector('p');
 const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+const cats = document.querySelector('.cats');
 
 function makeGreen() {
   p.style.color = '#BADA55';
@@ -60,3 +61,15 @@ console.count('Liberty');
 console.count('Kona');
 
 // timing
+console.time('fetching cat');
+fetch('http://random.cat/meow')
+  .then( data => data.json())
+  .then( data => {
+    const img = document.createElement('img');
+    img.setAttribute('src', `${data.file}`);
+    cats.append(img);
+  });
+console.timeEnd('fetching cat');
+
+// table
+console.table(dogs);
