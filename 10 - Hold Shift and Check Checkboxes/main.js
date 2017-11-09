@@ -11,6 +11,11 @@ function setLastChecked() {
 }
 
 function checkMultiple(e) {
+  if (lastCheckedIndex <= checkboxArray.indexOf(this)) {
+    const multiple = checkboxArray.slice(lastCheckedIndex1, checkboxArray.indexOf(this));
+  } else {
+    const multiple = checkboxArray.slice(checkboxArray.indexOf(this), lastCheckedIndex);
+  }
 }
 
 checkboxes.forEach( checkbox => checkbox.addEventListener('click', checkMultiple) );
