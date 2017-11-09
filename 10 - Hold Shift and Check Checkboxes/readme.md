@@ -1,4 +1,4 @@
-# #\10 - Hold Shift and CHeck Checkboxes
+# \#10 - Hold Shift and Check Checkboxes
 
 ## Exercise
 Given a checklist, add functionality so that when a user holds `Shift` and checks a second box (either above or below the first one), all items in between also become checked.
