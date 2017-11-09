@@ -19,7 +19,7 @@ Source files: [https://github.com/wesbos/JavaScript30](https://github.com/wesbos
 - [x] 7 - [Array Cardio Day 2](https://github.com/svillegascreative/JavaScript30/tree/master/07%20-%20Array%20Cardio%20Day%202)
 - [x] 8 - [Fun With HTML5 Canvas](https://github.com/svillegascreative/JavaScript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas)
 - [x] 9 - [Dev Tools Domination](https://github.com/svillegascreative/JavaScript30/tree/master/09%20-%20Dev%20Tools%20Domination)
-- [ ] 10 - Hold Shift and Check Checkboxes
+- [x] 10 - [Hold Shift and Check Checkboxes](https://github.com/svillegascreative/JavaScript30/tree/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes)
 - [ ] 11 - Custom Video Player
 - [ ] 12 - Key Sequence Detection
 - [ ] 13 - Slide in on Scroll
