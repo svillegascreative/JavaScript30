@@ -1,5 +1,6 @@
 // const items = document.querySelectorAll('.item');
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+const checkboxArray = Array.from(checkboxes);
 
 let lastChecked;
 
