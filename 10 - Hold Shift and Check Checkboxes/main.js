@@ -12,6 +12,7 @@ function setLastChecked() {
 }
 
 function checkMultiple(e) {
+  if ( !lastChecked ) return;
   if (lastCheckedIndex <= checkboxArray.indexOf(this)) {
     multipleChecked = checkboxArray.slice(lastCheckedIndex, checkboxArray.indexOf(this));
   } else {
