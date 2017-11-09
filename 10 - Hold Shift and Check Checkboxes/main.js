@@ -10,4 +10,8 @@ function setLastChecked() {
   lastCheckedIndex = checkboxArray.indexOf(this);
 }
 
+function checkMultiple(e) {
+}
+
+checkboxes.forEach( checkbox => checkbox.addEventListener('click', checkMultiple) );
 checkboxes.forEach( checkbox => checkbox.addEventListener('click', setLastChecked) );
