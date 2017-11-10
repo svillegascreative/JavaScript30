@@ -6,15 +6,11 @@ const toggle = document.querySelector('.toggle');
 const slider = document.querySelectorAll('.player__slider');
 const skipButtons = document.querySelectorAll('button[data-skip]');
 
-let isPlaying = false;
-
 function togglePlay() {
-  if (isPlaying) {
-    video.pause();
-    isPlaying = false;
-  } else {
+  if (video.paused) {
     video.play();
-    isPlaying = true;
+  } else {
+    video.pause();
   }
 }
 
