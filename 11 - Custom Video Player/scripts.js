@@ -18,6 +18,11 @@ function togglePlayButton() {
   video.paused ? toggle.innerHTML = '&#9654;' : toggle.innerHTML = '&#9208;';
 }
 
+function skipPlay() {
+  const skipTime = this.dataset.skip;
+  video.currentTime += parseFloat(skipTime);
+}
+
 
 
 toggle.addEventListener('click', togglePlay);
@@ -26,5 +31,8 @@ window.addEventListener('keydown', function(e) {
     togglePlay();
   }
 });
+
 video.addEventListener('play', togglePlayButton);
 video.addEventListener('pause', togglePlayButton);
+
+skipButtons.forEach( button => button.addEventListener('click', skipPlay) );
