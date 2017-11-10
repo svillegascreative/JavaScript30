@@ -14,9 +14,17 @@ function togglePlay() {
   }
 }
 
+function togglePlayButton() {
+  video.paused ? toggle.innerHTML = '&#9654;' : toggle.innerHTML = '&#9208;';
+}
+
+
+
 toggle.addEventListener('click', togglePlay);
 window.addEventListener('keydown', function(e) {
   if (e.keyCode === 32) {
     togglePlay();
   }
 });
+video.addEventListener('play', togglePlayButton);
+video.addEventListener('pause', togglePlayButton);
