@@ -15,8 +15,8 @@ function togglePlay() {
 }
 
 toggle.addEventListener('click', togglePlay);
-video.addEventListener('keydown', function(e) {
-  if (e.keyCode = 32) {
-    toggleplay();
+window.addEventListener('keydown', function(e) {
+  if (e.keyCode === 32) {
+    togglePlay();
   }
 });
