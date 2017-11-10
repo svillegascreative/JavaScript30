@@ -26,7 +26,7 @@ function skipPlay() {
 
 
 toggle.addEventListener('click', togglePlay);
-window.addEventListener('keydown', function(e) {
+window.addEventListener('keypress', function(e) {
   if (e.keyCode === 32) {
     togglePlay();
   }
