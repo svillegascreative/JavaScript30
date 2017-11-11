@@ -18,6 +18,11 @@ function togglePlayButton() {
   video.paused ? toggle.innerHTML = '&#9654;' : toggle.innerHTML = '&#9208;';
 }
 
+function updateProgress() {
+  const percentElapsed = video.currentTime / video.duration * 100;
+  progressFilled.style.flexBasis = `${percentElapsed}%`;
+}
+
 function skipPlay() {
   const skipTime = this.dataset.skip;
   video.currentTime += parseFloat(skipTime);
@@ -41,6 +46,7 @@ window.addEventListener('keypress', function(e) {
 
 video.addEventListener('play', togglePlayButton);
 video.addEventListener('pause', togglePlayButton);
+video.addEventListener('timeupdate', updateProgress);
 
 skipButtons.forEach( button => button.addEventListener('click', skipPlay) );
 
