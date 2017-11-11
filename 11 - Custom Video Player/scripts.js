@@ -23,6 +23,14 @@ function updateProgress() {
   progressFilled.style.flexBasis = `${percentElapsed}%`;
 }
 
+function changeProgress(e) {
+  const mouseDownX = e.offsetX;
+  const newFraction = mouseDownX / progress.clientWidth;
+  progressFilled.style.flexBasis = `${newFraction * 100}%`;
+  const newTime = video.duration * newFraction;
+  video.currentTime = newTime;
+}
+
 function skipPlay() {
   const skipTime = this.dataset.skip;
   video.currentTime += parseFloat(skipTime);
@@ -48,6 +56,7 @@ video.addEventListener('play', togglePlayButton);
 video.addEventListener('pause', togglePlayButton);
 video.addEventListener('timeupdate', updateProgress);
 
+progress.addEventListener('click', changeProgress);
 skipButtons.forEach( button => button.addEventListener('click', skipPlay) );
 
 sliders.forEach( slider => slider.addEventListener('change', handleSlider) );
