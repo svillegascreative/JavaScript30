@@ -24,10 +24,8 @@ function skipPlay() {
 }
 
 function handleSlider() {
-  console.log('handled');
   if (this.name == 'volume') {
     video.volume = this.value;
-    console.log(this.name);
   }
   if (this.name == 'playbackRate') {
     video.playbackRate = this.value;
