@@ -21,7 +21,7 @@ Source files: [https://github.com/wesbos/JavaScript30](https://github.com/wesbos
 - [x] 9 - [Dev Tools Domination](https://github.com/svillegascreative/JavaScript30/tree/master/09%20-%20Dev%20Tools%20Domination)
 - [x] 10 - [Hold Shift and Check Checkboxes](https://github.com/svillegascreative/JavaScript30/tree/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes)
 - [x] 11 - [Custom Video Player](https://github.com/svillegascreative/JavaScript30/tree/master/11%20-%20Custom%20Video%20Player)
-- [ ] 12 - Key Sequence Detection
+- [x] 12 - [Key Sequence Detection](https://github.com/svillegascreative/JavaScript30/tree/master/12%20-%20Key%20Sequence%20Detection)
 - [ ] 13 - Slide in on Scroll
 - [ ] 14 - JavaScript References vs. Copying
 - [ ] 15 - LocalStorage
