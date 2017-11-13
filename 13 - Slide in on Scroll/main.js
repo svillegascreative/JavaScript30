@@ -17,7 +17,11 @@ function debounce(func, wait = 20, immediate = true) {
 
 function slideImages(e) {
   slidingImages.forEach( (image) => {
-    image.classList.add('active');
+    const windowBottom = window.innerHeight + window.scrollY;
+    const slideTrigger = image.offsetTop + (image.height / 2);
+    if ( windowBottom >= slideTrigger ) {
+      image.classList.add('active');
+    }
   });
 }
 
