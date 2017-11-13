@@ -26,9 +26,7 @@ function updateProgress() {
 }
 
 function changeProgress(e) {
-  const mouseDownX = e.offsetX;
-  const newFraction = mouseDownX / progress.clientWidth;
-  progressFilled.style.flexBasis = `${newFraction * 100}%`;
+  const newFraction = e.offsetX / progress.clientWidth;
   const newTime = video.duration * newFraction;
   video.currentTime = newTime;
 }
