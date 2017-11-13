@@ -6,6 +6,7 @@ function compareToSecret(e) {
   pressed.splice(-secretCode - 1, pressed.length - secretCode.length);
   if (pressed.join("") == secretCode) {
     console.log('you did it!');
+    cornify_add();
   }
 }
 
