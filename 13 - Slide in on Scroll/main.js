@@ -22,6 +22,11 @@ function slideImages(e) {
     if ( windowBottom >= slideTrigger ) {
       image.classList.add('active');
     }
+
+    const imageBottom = image.offsetTop + image.height;
+    if ( imageBottom <= window.scrollY ) {
+      image.classList.remove('active');
+    }
   });
 }
 
