@@ -1,3 +1,5 @@
+const slidingImages = document.querySelectorAll('.slide-in');
+
 function debounce(func, wait = 20, immediate = true) {
   var timeout;
   return function() {
