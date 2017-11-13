@@ -14,3 +14,11 @@ function debounce(func, wait = 20, immediate = true) {
     if (callNow) func.apply(context, args);
   };
 }
+
+function slideImages() {
+  slidingImages.forEach( (image) => {
+    image.classList.add('active');
+  });
+}
+
+window.addEventListener('scroll', slideImages);
