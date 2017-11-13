@@ -15,7 +15,7 @@ function debounce(func, wait = 20, immediate = true) {
   };
 }
 
-function slideImages() {
+function slideImages(e) {
   slidingImages.forEach( (image) => {
     image.classList.add('active');
   });
