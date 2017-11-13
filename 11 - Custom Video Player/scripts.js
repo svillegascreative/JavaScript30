@@ -6,6 +6,8 @@ const toggle = document.querySelector('.toggle');
 const sliders = document.querySelectorAll('.player__slider');
 const skipButtons = document.querySelectorAll('button[data-skip]');
 
+let isDragging = false;
+
 function togglePlay() {
   if (video.paused) {
     video.play();
@@ -56,7 +58,15 @@ video.addEventListener('play', togglePlayButton);
 video.addEventListener('pause', togglePlayButton);
 video.addEventListener('timeupdate', updateProgress);
 
-progress.addEventListener('click', changeProgress);
+progress.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  changeProgress(e);
+});
+progress.addEventListener('mouseup', () => isDragging = false);
+progress.addEventListener('mouseout', () => isDragging = false);
+progress.addEventListener('mousemove', (e) => isDragging && changeProgress(e));
+
+
 skipButtons.forEach( button => button.addEventListener('click', skipPlay) );
 
 sliders.forEach( slider => slider.addEventListener('change', handleSlider) );
