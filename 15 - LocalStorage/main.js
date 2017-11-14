@@ -16,7 +16,11 @@ function addItem(e) {
 
 function displayItems() {
   const list = items.map( (item) => {
-    return `<li>${item.name}</li>`
+    return `
+      <li>
+        <input name=${item.name} type="checkbox">
+        <label for=${item.name}>${item.name}</label>
+      </li>`
   }).join('');
   itemsList.innerHTML = list;
 }
