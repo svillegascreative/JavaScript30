@@ -18,7 +18,7 @@ function displayItems() {
   const list = items.map( (item) => {
     return `
       <li>
-        <input name=${item.name} type="checkbox">
+        <input id=${item.name} type="checkbox" ${item.checked ? 'checked' : ''} />
         <label for=${item.name}>${item.name}</label>
       </li>`
   }).join('');
