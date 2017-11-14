@@ -3,7 +3,8 @@ const input = document.querySelector('input[name="item"]');
 const itemsList = document.querySelector('.plates');
 const items = [];
 
-function addItem() {
+function addItem(e) {
+  e.preventDefault();
   items.push(input.value);
 }
 
