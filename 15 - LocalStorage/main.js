@@ -26,6 +26,13 @@ function displayItems() {
   itemsList.innerHTML = list;
 }
 
+function toggleCheck(e) {
+  if ( !e.target.matches('input') ) return;
+  const index = e.target.dataset.index;
+  items[index].checked = !items[index].checked;
+}
+
 addItems.addEventListener('submit', addItem);
+itemsList.addEventListener('click', toggleCheck);
 
 displayItems();
