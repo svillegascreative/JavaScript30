@@ -30,6 +30,8 @@ function toggleCheck(e) {
   if ( !e.target.matches('input') ) return;
   const index = e.target.dataset.index;
   items[index].checked = !items[index].checked;
+  localStorage.setItem('items', JSON.stringify(items));
+  displayItems();
 }
 
 addItems.addEventListener('submit', addItem);
