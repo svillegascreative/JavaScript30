@@ -10,6 +10,7 @@ function addItem(e) {
     checked: false
   }
   items.push(item);
+  localStorage.setItem('items', JSON.stringify(items));
   this.reset();
   displayItems();
 }
