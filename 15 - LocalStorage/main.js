@@ -11,6 +11,14 @@ function addItem(e) {
   }
   items.push(item);
   this.reset();
+  displayItems();
+}
+
+function displayItems() {
+  const list = items.map( (item) => {
+    return `<li>${item.name}</li>`
+  }).join('');
+  itemsList.innerHTML = list;
 }
 
 addItems.addEventListener('submit', addItem);
