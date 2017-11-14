@@ -5,7 +5,11 @@ const items = [];
 
 function addItem(e) {
   e.preventDefault();
-  items.push(input.value);
+  const item = {
+    name: input.value,
+    checked: false
+  }
+  items.push(item);
 }
 
 addItems.addEventListener('submit', addItem);
