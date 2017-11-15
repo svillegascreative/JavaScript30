@@ -16,7 +16,12 @@ function moveShadow(e) {
   const xLimit = Math.round((mouseX / width * limit) - (limit / 2));
   const yLimit = Math.round((mouseY / height * limit) - (limit / 2));
 
-  header.style.textShadow = `${xLimit}px ${yLimit}px 0 grey`;
+  header.style.textShadow = `
+    ${xLimit}px ${yLimit}px 0 grey,
+    -${xLimit}px ${yLimit}px 0 darkgrey,
+    ${yLimit}px -${xLimit}px 0 lightgrey,
+    -${yLimit}px -${xLimit}px 0 slategrey
+  `;
 }
 
 hero.addEventListener('mousemove', moveShadow);
