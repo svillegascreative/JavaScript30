@@ -1,5 +1,6 @@
 const hero = document.querySelector('.hero');
 const header = hero.querySelector('h1');
+const limit = 100;
 
 function moveShadow(e) {
   const height = hero.offsetHeight;
@@ -11,7 +12,9 @@ function moveShadow(e) {
     mouseX += e.target.offsetLeft;
     mouseY += e.target.offsetTop;
   }
-  console.log(mouseX, mouseY);
+
+  const xLimit = Math.round((mouseX / width * limit) - (limit / 2));
+  const yLimit = Math.round((mouseY / height * limit) - (limit / 2));
 }
 
 hero.addEventListener('mousemove', moveShadow);
