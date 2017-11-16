@@ -26,7 +26,7 @@ Source files: [https://github.com/wesbos/JavaScript30](https://github.com/wesbos
 - [x] 14 - [JavaScript References vs. Copying](https://github.com/svillegascreative/JavaScript30/tree/master/14%20-%20JavaScript%20References%20VS%20Copying)
 - [x] 15 - [LocalStorage](https://github.com/svillegascreative/JavaScript30/tree/master/15%20-%20LocalStorage)
 - [x] 16 - [MouseMove Shadow](https://github.com/svillegascreative/JavaScript30/tree/master/16%20-%20Mouse%20Move%20Shadow)
-- [ ] 17 - Sort Without Articles
+- [x] 17 - [Sort Without Articles](https://github.com/svillegascreative/JavaScript30/tree/master/17%20-%20Sort%20Without%20Articles)
 - [ ] 18 - Adding up Times with Reduce
 - [ ] 19 - Webcam fun
 - [ ] 20 - Speech Detection
