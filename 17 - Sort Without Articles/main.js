@@ -4,6 +4,6 @@ function removeArticles(name) {
   return name.replace(/^(a |the |an )/i, '');
 }
 
-const sortedBands = bands.sort();
-
-console.log(sortedBands);
+const sortedBands = bands.sort( (a, b) => {
+  return removeArticles(a) > removeArticles(b) ? 1 : -1;
+});
